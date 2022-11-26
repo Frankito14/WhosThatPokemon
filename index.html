@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pokémon</title>
+    <script src="scripts.js" defer></script>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="icon" href="https://archive.org/download/PokemonIcon/pokemon%20icon.png">
+    <!--ANIMATE ANIMATED-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+</head>
+
+<body>
+    <main>
+        <h1>Who's That Pokémon?</h1>
+        <h2 id="puntaje">Puntaje: 0</h2>
+        <h2 id="intentos-restantes">Intentos restantes: 10</h2>
+        <div id="pokemon-div">
+            <div id="pokemon-container" class="animate__animated animate__bounce">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+                <h3>24</h3>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="ButtonNewPokemon">Cambiar Pokémon</button>
+            <button id="opcion1" onclick="ElegirOpcion_(button1)">BULBASAUR</button>
+            <button id="opcion2" onclick="ElegirOpcion_(button2)">CHARMANDER</button>
+            <button id="opcion3" onclick="ElegirOpcion_(button3)">SQUIRTLE</button>
+            <button id="opcion4" onclick="ElegirOpcion_(button4)">LGANTE</button>
+        </div>
+    </main>
+</body>
+
+</html>

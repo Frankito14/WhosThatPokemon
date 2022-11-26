@@ -1,0 +1,144 @@
+:root {
+    --type-radius: 10%;
+    --type-padding: 5%;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./img/fondo1.png");
+    background-repeat: repeat;
+}
+
+/*Menu*/
+main{
+    width: 98%;
+    padding: 2%;
+}
+
+h1, h2, h3{
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pokemon-div{
+    margin: auto;
+}
+
+#pokemon-container{
+    width: 400px; 
+    margin: auto; 
+    padding: 2%;
+
+    text-align: center;
+
+    background-color:#f7f7f7;
+    border-radius: 10px;
+
+    
+}
+
+/*Imagen Pokemon*/
+img{
+    width:18rem; 
+    margin: auto;
+    /*filter: brightness(0%);*//*Si se activa esto es mas dificil todavia.*/
+}
+
+/*Botones*/
+.button-container{
+    width: 400px;
+    margin: 2% auto;
+    padding: 0.5%;
+
+    background-color: #ebebeb;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ButtonNewPokemon{
+    width: 98%;
+    margin: auto;
+}
+
+#opcion1,#opcion2,#opcion3,#opcion4{
+    width: 48%;
+    margin:1%;
+    padding: 1%;
+    
+}
+
+/*Puntaje*/
+#puntaje{
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 1%;
+}
+
+#intentos-restantes{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 1%;
+}
+
+#opcion1,#opcion2,#opcion3,#opcion4, #ButtonNewPokemon{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+
+
+    background-color: #ffffff;
+    color: rgb(20, 20, 20);
+    border-style: none;
+    outline: 0;
+    border-radius: 3px;
+}
+
+
+
+#opcion1:active,#opcion2:active,#opcion3:active,#opcion4:active{
+    background-color: #f8d9a0;
+}
+
+#ButtonNewPokemon{
+    background-color: #af8a8a;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+#ButtonNewPokemon:hover{
+    background-color: #bd5151;
+}
+
+#ButtonNewPokemon:disabled{
+    background-color: #e0e0e0;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/*Media Querys*/
+@media all and (max-width: 800px){
+    #opcion1,#opcion2,#opcion3,#opcion4,#pokemon-div, #pokemon-container, .button-container{width: 98%;}
+    #puntaje, #intentos-restantes{font-size: small;}
+    .button-container{padding: 2%;}
+    h1{margin-top: 8%;}
+}
+
+@media all and (min-width: 801px){
+#opcion1:hover,#opcion2:hover,#opcion3:hover,#opcion4:hover{
+    background-color: #f8f0dc;
+    }
+}
